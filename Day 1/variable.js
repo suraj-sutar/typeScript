@@ -1,3 +1,4 @@
+"use strict";
 // variable are store and retirve the data in our application
 //we use a variable as container
 var x = 10; //store
