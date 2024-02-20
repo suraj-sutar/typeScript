@@ -23,29 +23,41 @@ class Cars {
     }
 }
 class Hundai extends Cars {
+    gps() {
+        return true;
+    }
     //implementation
     price() {
         return 1000000;
     }
     color() {
-        return "Gray";
+        return "White";
     }
     totalSeats() {
         return 5;
     }
 }
 class Toyota extends Cars {
+    gps() {
+        return false;
+    }
     price() {
-        return 50000;
+        return 900000;
     }
     color() {
-        return "white";
+        return "Gray";
     }
     totalSeats() {
-        return 8;
+        return 7;
     }
 }
 var objToyota = new Toyota();
-console.log(objToyota.color());
+console.log(`Toyata GPS: ${objToyota.gps()}`);
+console.log(`Toyata Price: ${objToyota.price()}`);
+console.log(`Toyata Color: ${objToyota.color()}`);
+console.log(`Toyata Total Seats: ${objToyota.totalSeats()}`);
 var objHundai = new Hundai();
-console.log(objHundai.totalSeats());
+console.log(`Hundai GPS:${objHundai.gps()}`);
+console.log(`Hundai Price:${objHundai.price()}`);
+console.log(`Hundai Color:${objHundai.color()}`);
+console.log(`Hundai Total Seats:${objHundai.totalSeats()}`);
