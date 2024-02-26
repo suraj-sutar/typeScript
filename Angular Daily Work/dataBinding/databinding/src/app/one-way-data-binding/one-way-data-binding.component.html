@@ -1,0 +1,23 @@
+<style>
+  input {
+    padding: 0 10px;
+    margin: 10px;
+  }
+</style>
+
+<!-- Assignment 1 -->
+<div style="text-align: center">
+  <h2>Assignment 1</h2>
+  <!-- here input is a event like click ,mouseover like that inside that we pass method that 
+is call when the user typed any value -->
+  <input type="text" (input)="bindvalue($event)" />
+  <p>{{ value }}</p>
+  <hr />
+</div>
+<!-- Assignment 2 -->
+<div style="text-align: center">
+  <h2>Assignment 2</h2>
+  <input type="text" [value]="changeValue" />
+  <button (click)="onClickMe()">Click Me</button>
+  <hr />
+</div>

@@ -1,4 +1,5 @@
 "use strict";
+//Using ? we can define opetional property
 // function addnum(a: number, b?: number) {
 //   if (typeof b !== "undefined") {
 //     return a + b;

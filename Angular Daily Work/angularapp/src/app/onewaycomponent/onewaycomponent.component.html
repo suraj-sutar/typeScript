@@ -1,0 +1,9 @@
+<p>One way Component Works</p>
+
+<!-- here we are create one event binding inside that i have pass event that is input
+if i want any event like click the we will use click event inside () brakets -->
+<input type="text" (input)="onNameChange($event)" />
+<h2>{{ typedName }}</h2>
+
+<!-- in angular we can use $event variable ,this variable will provide information about the 
+event that was invoked -->
